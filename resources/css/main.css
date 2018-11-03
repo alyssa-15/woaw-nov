@@ -104,7 +104,31 @@ h4 {
 
 header {
     background-color: var(--alternative-bg-color);
-    ;
+    padding-top: var(--padder);
+
+}
+
+header .layout-wide {
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+
+.logo-wrapper {
+width: 20%;
+float: left;
+}
+
+.site-title {
+    font-family: var(---font-heading);
+    font-size: var(--font-size-title);
+    color: var(--alternative-text-color);
+
+    float: right;
+    width: 80%;
+    text-align: right;
+}
+
 }
 
 
