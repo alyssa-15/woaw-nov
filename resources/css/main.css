@@ -1,17 +1,110 @@
 /*  -------------------------------- VARIABLES  */
+:root {
+
+
+    --font-default: arial, sans-serif;
+
+    --font-heading: 'Georgia', cursive;
+
+    
+  
+    /* Colors */
+    --color-green: #084e3f;
+    --color-red: #ff5b5e;
+    --color-deep-blue: #28313b;
+    --color-light-grey: #97a4b1;
+    --color-mid-blue: #34495e;
+    --color-almost-white: #e8eef4;
+  
+    /* abstract colors out */
+    --main-text-color: var(--color-mid-blue);
+    --strong-text-color: var(--color-deep-blue);
+    --alternative-text-color: var(--color-almost-white);
+    --error-color: var(--color-red);
+    --border-color: var(--color-light-grey);
+    
+    --secondary-bg-color: var(--color-almost-white);
+    --alternative-bg-color: var(--color-green);
+    
+    /* measurements*/
+    --padder: 3%;
+    --spacer: 20px;
+    --spacer-large: 80px;
+    --transition-time: 0.3s;
+  
+    --area-wide: 800px;
+  
+    /* font sizes */
+    --font-size-site-title: 32px;
+    --font-size-page-title: 40px;
+    --font-size-section-title: 30px; 
+    --font-size-sub-title: 24px;
+    --font-size-heading-small: 16px;
+  }
 
 /*  -------------------------------- GLOBAL DEFAULTS  */
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-default);
+    color: var(--main-text-color);
+    font-size: 18px;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
 /*  -------------------------------- HEADINGS AND TYPE  */
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-heading);
+}
+
+
 /*  -------------------------------- LAYOUTS  */
+
+.layout-wide,
+.layout-full-width {
+    margin-bottom: var(--spacer-large);
+
+}
+
+
+.layout-full-width {
+    width: 100%;
+
+}
+
+.layout-wide {
+    max-width: var(--area-wide);
+    padding-left: var(--padder);
+    padding-right: var(--padder);
+
+
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
 
 /*  -------------------------------- HEADER  */
 
 
 
 header {
-    background-color: #084e3f;
+    background-color: var(--alternative-bg-color);
+    ;
 }
 
 
@@ -21,7 +114,7 @@ header {
 
 
 footer {
-    background-color: #084e3f;
+    background-color: var(--alternative-bg-color);
 }
 
 /*  -------------------------------- FORMS  */
