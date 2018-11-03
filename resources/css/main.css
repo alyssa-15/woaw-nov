@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One|Raleway');
+
 /*  -------------------------------- VARIABLES  */
 :root {
 
 
-    --font-default: arial, sans-serif;
+    --font-default: 'Raleway', sans-serif;
 
-    --font-heading: 'Georgia', cursive;
+    --font-heading: 'Lilita One', cursive;
 
     
   
@@ -67,8 +69,30 @@ h2,
 h3,
 h4 {
     font-family: var(--font-heading);
+    font-weight: normal;
+    color: var(--strong-text-color);
 }
 
+h1 {
+    font-size: var(--font-size-page-title);
+}
+
+h2 {
+    font-size: var(--font-size-section-title);
+}
+
+h3 {
+    font-size: var(--font-size-sub-title);
+}
+
+a {
+    color: var(--error-color);
+    transition: var(--transition-time);
+}
+
+a:hover {
+    color: var(--strong-text-color);
+}
 
 /*  -------------------------------- LAYOUTS  */
 
@@ -139,7 +163,70 @@ footer {
     background-color: var(--alternative-bg-color);
 }
 
+.footer-subscribe {
+    background-color: var(--secondary-bg-color);
+    padding-top: var(--spacer-large);
+    padding-bottom: var(--spacer-large);
+    text-align: center;
+}
+
+.footer-notices {
+    padding-top: var(--spacer);
+    padding-bottom: var(--spacer-large);
+}
+
+.footer-notices .layout-wide {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.copyright {
+    color: white;
+}
+
+
+
 /*  -------------------------------- FORMS  */
 
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"], 
+input[type="email"]{
+    margin-bottom: var(--spacer);
+    border: 1px solid var(--border-color);
+    padding: 10px;
+
+    width: 480px;
+    max-width: 100%;
+
+    border-radius: 4px;
+
+}
+
+input[type="submit"] {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+
+
+    background-color: var(--alternative-bg-color);
+    color: white;
+
+    padding: var(--spacer);
+    border: none;
+    border-radius: 30px;
+
+    transition: var(--transition-time);
+}
+
+input[type="submit"]:hover{
+    background-color: red;
+}
+
+.indicates-required {
+    margin-bottom: 10px;  
+}
 
 /*  -------------------------------- MODULES  */
