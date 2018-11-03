@@ -105,7 +105,6 @@ h4 {
 header {
     background-color: var(--alternative-bg-color);
     padding-top: var(--padder);
-
 }
 
 header .layout-wide {
@@ -129,7 +128,6 @@ float: left;
     text-align: right;
 }
 
-}
 
 
 /*  -------------------------------- NAVIGATION  */
