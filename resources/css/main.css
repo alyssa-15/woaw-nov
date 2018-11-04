@@ -34,7 +34,7 @@
     --spacer-large: 80px;
     --transition-time: 0.3s;
   
-    --area-wide: 800px;
+    --area-wide: 1200px;
   
     /* font sizes */
     --font-size-site-title: 32px;
@@ -226,7 +226,7 @@ float: left;
     }
 
     .navigation {
-        padding: var(--padder) o;
+        padding: var(--padder) 0;
     }
 
     /*make nav stuff sit next to each other on desktop view*/
@@ -381,4 +381,35 @@ input[type="submit"]:hover{
         grid-template-columns: 48% 48%;
         justify-content: space-between;
     }
+}
+
+
+
+/* image gallery */
+.image-gallery ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+}
+
+
+.image-gallery li {
+    float: left;
+    max-width: 250px;
+    margin: 10px;
+
+}
+/*play with box shadow dimensions, filter, transform*/
+
+.image-gallery a img {
+    filter: grayscale(70%);
+    transition: var(--transition-time);
+    box-shadow: 0px 1px 10px var(--strong-text-color)
+}
+
+.image-gallery a:hover img {
+    transform: scale(1.1);
+    filter: unset;
 }

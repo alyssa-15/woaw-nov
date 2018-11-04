@@ -30,3 +30,16 @@ function activeMenu() {
 }
 
 activeMenu();
+
+// image gallery
+
+// in any programming language, !=not
+function imageGallery() {
+
+    if (!$('.image-gallery').length) {
+        return;
+    }
+    $('.image-gallery a').simpleLightbox();
+}
+
+imageGallery();

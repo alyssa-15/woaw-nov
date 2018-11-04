@@ -12,18 +12,21 @@
 
     <link href="resources/css/normalize.css" rel="stylesheet">
 
+
+    <link href="resources/css/simpleLightbox.min.css" rel="stylesheet">
+
     <link href="resources/css/main.css" rel="stylesheet">
 
 
     <link rel="apple-touch-icon" sizes="180x180" href="resources/icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="resources/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-16x16.png">
-<link rel="manifest" href="resources/icons/site.webmanifest">
-<link rel="mask-icon" href="resources/icons/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="resources/icons/favicon.ico">
-<meta name="msapplication-TileColor" content="#2b5797">
-<meta name="msapplication-config" content="resources/icons/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/icons/favicon-16x16.png">
+    <link rel="manifest" href="resources/icons/site.webmanifest">
+    <link rel="mask-icon" href="resources/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="resources/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="resources/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
 
 </head>
@@ -84,18 +87,79 @@
 
         <section class="hero-module">
 
-            <img src="resources/images/new-york-wide-1500.jpg" alt="New York.">
+            <video muted autoplay loop src="resources/video/new-york.mp4" poster="resources/images/new-york-wide-1500.jpg">
+
+                Your browser does not support the video tag.
+            </video>
 
             <div class="hero-content">
 
-                    <h1 class="heading-main layout-wide">It's Time To Travel</h1>
+                <h1 class="heading-main layout-wide">Media</h1>
 
             </div>
         </section>
 
+        <section class="layout-wide">
+            <h2>Audio</h2>
+            <h3>A song about something</h3>
 
-       
+            <audio controls src="resources/audio/bensound-happyrock.mp3">
+            </audio>
 
+        </section>
+
+        <section class="layout-wide">
+
+            <h2>New York</h2>
+
+            <div class='image-gallery'>
+
+                <!--TO DO change title and alt text-->
+                <ul>
+                    <li>
+                        <a href="resources/galleries/new-york-01.jpg" title="Statue of Liberty">
+                            <img src="resources/galleries/new-york-01-thumb.jpg" alt="Statue of Liberty">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="resources/galleries/new-york-02.jpg" title="Statue of Liberty">
+                            <img src="resources/galleries/new-york-02-thumb.jpg" alt="Statue of Liberty">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resources/galleries/new-york-03.jpg" title="Statue of Liberty">
+                            <img src="resources/galleries/new-york-03-thumb.jpg" alt="Statue of Liberty">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resources/galleries/new-york-04.jpg" title="Statue of Liberty">
+                            <img src="resources/galleries/new-york-04-thumb.jpg" alt="Statue of Liberty">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resources/galleries/new-york-05.jpg" title="Statue of Liberty">
+                            <img src="resources/galleries/new-york-05-thumb.jpg" alt="Statue of Liberty">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resources/galleries/new-york-06.jpg" title="Statue of Liberty">
+                            <img src="resources/galleries/new-york-06-thumb.jpg" alt="Statue of Liberty">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resources/galleries/new-york-07.jpg" title="Statue of Liberty">
+                            <img src="resources/galleries/new-york-07-thumb.jpg" alt="Statue of Liberty">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resources/galleries/new-york-08.jpg" title="Statue of Liberty">
+                            <img src="resources/galleries/new-york-08-thumb.jpg" alt="Statue of Liberty">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
     </main>
 
@@ -155,14 +219,17 @@
 
     <script src="resources/js/css-var-polyfill.js"></script>
 
-<script src="resources/js/jquery.js"></script>
+    <script src="resources/js/jquery.js"></script>
 
+
+
+<script src="resources/js/simpleLightbox.min.js"></script>
 
 
 
     <script src="resources/js/scripts.js"></script>
 
-    <!-- ^^^fix the website for use in internet explorer-->
+    <!-- ^^^fixes the website for use in internet explorer-->
 
 </body>
 
