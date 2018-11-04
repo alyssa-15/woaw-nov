@@ -175,6 +175,7 @@ float: left;
     background-color: var(--alternative-bg-color);
     position: sticky;
     top: 0;
+    z-index: 10;/*up to 500. video play button layer problem*/
 }
 
 
@@ -331,3 +332,34 @@ input[type="submit"]:hover{
 }
 
 /*  -------------------------------- MODULES  */
+
+/* title on pic part*/
+@media screen and (min-width: 800px) {
+
+    .hero-module {
+        position: relative;
+    }
+
+    .hero-module img {
+        width: 100%;
+    }
+
+    .hero-content {
+
+        position: absolute;
+
+        height: 100%;
+        width: 100%;
+
+        bottom: 0;
+
+        display: flex;
+        align-items: center;
+
+    }
+
+    .heading-main {
+        color: var(--alternative-text-color);
+        text-shadow: 0px 1px 10px var(--strong-text-color);
+    }
+}
